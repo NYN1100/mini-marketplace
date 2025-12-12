@@ -2,7 +2,7 @@ Ism Familya: Nimatullayev Yusuf
 
 Demo ilovasi: https://mini-marketplace-pi.vercel.app/
 
-Vazifa qancha vaqt oldi: 3 soat
+Vazifa qancha vaqt oldi: 2.5 soat
 
 Qiyin bo'lgan joylar: yo'q
 
