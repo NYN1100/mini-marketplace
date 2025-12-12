@@ -1,12 +1,6 @@
 import React, { useCallback } from "react";
 
-const CartItem = ({
-  item,
-  count,
-  onRemove, // Changed from onRemoveFromCart to onRemove
-  onIncrement,
-  onDecrement,
-}) => {
+const CartItem = ({ item, count, onRemove, onIncrement, onDecrement }) => {
   const handleRemove = useCallback(
     (e) => {
       e.stopPropagation();

@@ -16,7 +16,6 @@ const getInitialCart = () => {
 const App = () => {
   const [cart, setCart] = useState(getInitialCart);
 
-  // Save cart to localStorage whenever it changes
   useEffect(() => {
     try {
       localStorage.setItem("cart", JSON.stringify(cart));
@@ -69,19 +68,15 @@ const App = () => {
   const cartSectionRef = useRef(null);
   const [showFloatingCart, setShowFloatingCart] = useState(false);
 
-  // Show/hide floating cart button based on screen size
   useEffect(() => {
     const handleResize = () => {
-      setShowFloatingCart(window.innerWidth < 768); // Show on mobile screens
+      setShowFloatingCart(window.innerWidth < 768);
     };
 
-    // Set initial state
     handleResize();
 
-    // Add event listener
     window.addEventListener("resize", handleResize);
 
-    // Cleanup
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
@@ -92,7 +87,6 @@ const App = () => {
         block: "end",
       });
 
-      // Small delay to ensure the smooth scroll is complete before focusing
       setTimeout(() => {
         cartSectionRef.current?.focus({ preventScroll: true });
       }, 800);

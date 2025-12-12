@@ -1,6 +1,6 @@
 Ism Familya: Nimatullayev Yusuf
 
-Vazifa qancha vaqt oldi: 2.5 soat
+Vazifa qancha vaqt oldi: 3 soat
 
 Qiyin bo'lgan joylar: yo'q
 

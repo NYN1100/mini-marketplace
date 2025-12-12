@@ -31,11 +31,11 @@ const renderProducts = (products) => {
 
   if (!container) return;
 
-  console.log("Rendering products:", products); // Log products data
+  console.log("Rendering products:", products);
 
   container.innerHTML = products
     .map((product) => {
-      console.log(`Product ${product.id} image URL:`, product.image); // Log each image URL
+      console.log(`Product ${product.id} image URL:`, product.image);
 
       return `
       <div class="product-card">

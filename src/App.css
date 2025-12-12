@@ -1,9 +1,6 @@
-/* Base styles */
 :root {
-  /* Improved touch targets */
   --touch-target-min: 44px;
   --touch-target-padding: 1rem;
-  /* Modern color palette */
   --primary-color: #4361ee;
   --primary-light: #4cc9f0;
   --secondary-color: #3a0ca3;
@@ -23,7 +20,6 @@
   --spacing-unit: 1rem;
 }
 
-/* App container */
 .app {
   min-height: 100vh;
   padding: 0;
@@ -43,7 +39,6 @@
   padding: 2rem 1.5rem;
 }
 
-/* Header */
 .app-header {
   text-align: center;
   margin: 0 0 3rem 0;
@@ -481,7 +476,6 @@
   height: 14px;
 }
 
-/* Cart Summary */
 .cart-summary {
   padding: 1.5rem;
   background: var(--light-bg);
@@ -505,7 +499,6 @@
 }
 
 .checkout-btn {
-  /* Make checkout button more prominent */
   font-weight: 600;
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -587,7 +580,6 @@ button:active {
   }
 }
 
-/* Product Card (will be used by vanilla JS) */
 .product-card {
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
@@ -646,7 +638,6 @@ button:active {
   will-change: transform, box-shadow;
 }
 
-/* Product Image */
 .product-image {
   position: absolute;
   top: 50%;
@@ -663,7 +654,6 @@ button:active {
   image-rendering: -webkit-optimize-contrast;
 }
 
-/* Hover Effects */
 .product-card:hover .product-image {
   transform: translate(-50%, -50%) scale(1.05);
   filter: saturate(1.1) contrast(1.05)
@@ -678,7 +668,6 @@ button:active {
   background: #ffffff;
 }
 
-/* Loading State */
 @keyframes shimmer {
   0% {
     background-position: -1000px 0;
@@ -694,7 +683,6 @@ button:active {
   animation: shimmer 1.5s infinite linear;
 }
 
-/* Image Fallback */
 .product-image.fallback {
   width: 40%;
   height: 40%;
@@ -702,9 +690,7 @@ button:active {
   filter: grayscale(1) opacity(0.7);
 }
 
-/* Floating Cart Button */
 .floating-cart-btn {
-  /* Ensure it's above the mobile browser UI */
   padding-bottom: env(safe-area-inset-bottom);
   position: fixed;
   bottom: 1.5rem;
@@ -778,14 +764,12 @@ button:active {
   }
 }
 
-/* Hide on desktop */
 @media (min-width: 768px) {
   .floating-cart-btn {
     display: none;
   }
 }
 
-/* Mobile Optimizations */
 @media (max-width: 768px) {
   /* Base adjustments */
   html {
@@ -793,7 +777,6 @@ button:active {
     -webkit-text-size-adjust: 100%;
   }
 
-  /* Improved touch targets */
   button,
   .product-card,
   .cart-item,
@@ -803,7 +786,6 @@ button:active {
     padding: 0.75rem 1rem;
   }
 
-  /* Better spacing */
   .products-grid {
     gap: 1rem;
     padding: 0.5rem;
@@ -814,14 +796,12 @@ button:active {
     border-radius: 12px;
   }
 
-  /* Improved cart items */
   .cart-item {
     padding: 1rem;
     margin-bottom: 0.75rem;
     border-radius: 10px;
   }
 
-  /* Better quantity controls */
   .quantity-controls {
     padding: 0.5rem;
   }
@@ -831,20 +811,17 @@ button:active {
     height: 36px;
   }
 
-  /* Improved cart summary */
   .cart-summary {
     padding: 1.25rem;
     margin-top: 1.5rem;
     border-radius: 12px;
   }
 
-  /* Better button feedback */
   button:active {
     transform: scale(0.98);
     opacity: 0.9;
   }
 
-  /* Prevent zoom on input focus */
   @media (max-width: 480px) {
     input,
     select,
@@ -854,7 +831,6 @@ button:active {
   }
 }
 
-/* Responsive Adjustments */
 @media (max-width: 1024px) {
   .product-image-container {
     padding-top: 85%;

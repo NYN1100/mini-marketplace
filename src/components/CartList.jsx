@@ -109,7 +109,6 @@ const CartList = React.forwardRef(
                     item={item}
                     count={item.quantity}
                     onRemove={() => {
-                      // Remove all instances of this product from the cart
                       const newCart = cart.filter(
                         (cartItem) => cartItem.id !== item.id
                       );
